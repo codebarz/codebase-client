@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Monaco';
+  src: url('/assets/fonts/Monaco.ttf') format('opentype');
+  src: url('/assets/fonts/Monaco.ttf') format('truetype');
+}
+
+$default-font-family: 'Monaco', 'Open-Sans', 'sans-serif';
+$monaco: 'Monaco';
