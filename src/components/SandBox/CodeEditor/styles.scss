@@ -1,0 +1,63 @@
+@import '../../../_variables.scss';
+@import 'codemirror/lib/codemirror.scss';
+@import 'codemirror/theme/material.scss';
+
+.sandbox-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .react-codemirror2 {
+    width: 100%;
+    height: 100%;
+  }
+  code {
+    width: 100%;
+    height: 100%;
+    font-family: $monaco;
+    color: $default-font-color;
+    outline: none;
+    font-size: 10px;
+    line-height: 15px;
+    background: $default-background;
+    overflow-y: scroll;
+    white-space: pre;
+    display: block;
+    counter-reset: line-counter;
+    counter-increment: line-counter 0;
+    padding: 5px 0;
+    div {
+      position: relative;
+      display: block;
+      &::before {
+        color: #272a34;
+        user-select: none;
+        content: counter(line-counter);
+        counter-increment: line-counter;
+        text-align: right;
+        padding: 20px;
+      }
+    }
+    .keyword {
+      color: #dd0d0d;
+    }
+  }
+  //   .sandbox-number-lines {
+  //     width: 4%;
+  //     height: 100%;
+  //     overflow: hidden;
+  //     // ul {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     font-size: 10px;
+  //     line-height: 15px;
+  //     font-family: $monaco;
+  //     &::before {
+  //       counter-increment: line-counter;
+  //       content: counter(line-counter);
+  //       display: block;
+  //       color: #272a34;
+  //     }
+  //     // }
+  //   }
+}
