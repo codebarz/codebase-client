@@ -1,8 +1,14 @@
 import React from 'react';
-import './App.scss';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Editor from './pages/editor';
 
 function App() {
-  return <>Codebase</>;
+  return (
+    <Router>
+      <Route exact component={Editor}></Route>
+    </Router>
+  );
 }
 
 export default App;
