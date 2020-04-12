@@ -3,6 +3,29 @@
   src: url('/assets/fonts/Monaco.ttf') format('opentype');
   src: url('/assets/fonts/Monaco.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/assets/fonts/Montserrat-Medium.ttf') format('opentype');
+  src: url('/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/assets/fonts/Montserrat-Regular.ttf') format('opentype');
+  src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
 
-$default-font-family: 'Monaco', 'Open-Sans', 'sans-serif';
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('opentype');
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+$default-font-family: 'Inter', 'Open-Sans', 'sans-serif';
+$default-background: #0a0d14;
+$default-font-color: #aeaca7;
+$panel-background: #05070a;
+
 $monaco: 'Monaco';
+$inter: 'Inter';
+$montserrat: 'Montserrat-Regular';
+$montserrat-medium: 'Montserrat-Medium';
